@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="et">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tunniplaan — Spordivaim</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="brand" href="index.html">
+    <img src="assets/logo.png" alt="Spordivaim logo">
+  </a>
+  <button class="nav-toggle" id="navToggle" aria-label="Ava menüü">MENÜÜ</button>
+  <nav class="main-nav" id="mainNav">
+    <a href="index.html">Avaleht</a>
+    <a class="active" href="tunniplaan.html">Tunniplaan</a>
+    <a href="kalender.html">Treenerite kalender</a>
+    <a href="aastaplaan.html">Aastaplaan</a>
+  </nav>
+</header>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Nädala tunniplaan</h2>
+    <p>Trennid toimuvad koolimaja spordisaalis. Kaasa spordiriided ja veepudel.</p>
+  </div>
+
+  <div class="timetable-wrap">
+    <table class="timetable">
+      <thead>
+        <tr>
+          <th>Kellaaeg</th>
+          <th>Esmaspäev</th>
+          <th>Teisipäev</th>
+          <th>Kolmapäev</th>
+          <th>Neljapäev</th>
+          <th>Reede</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="slot-time">14:00–14:45</td>
+          <td><span class="tag">1. klass</span><br>Üldkehaline</td>
+          <td>—</td>
+          <td><span class="tag">1. klass</span><br>Pallimängud</td>
+          <td>—</td>
+          <td><span class="tag">1. klass</span><br>Liikumismängud</td>
+        </tr>
+        <tr>
+          <td class="slot-time">15:00–15:45</td>
+          <td><span class="tag">2. klass</span><br>Kergejõustik</td>
+          <td><span class="tag">3. klass</span><br>Võimlemine</td>
+          <td><span class="tag">2. klass</span><br>Pallimängud</td>
+          <td><span class="tag">3. klass</span><br>Kergejõustik</td>
+          <td><span class="tag">2. klass</span><br>Üldkehaline</td>
+        </tr>
+        <tr>
+          <td class="slot-time">16:00–16:45</td>
+          <td><span class="tag">4. klass</span><br>Meeskonnaspordid</td>
+          <td><span class="tag">4. klass</span><br>Kergejõustik</td>
+          <td><span class="tag">3. klass</span><br>Üldkehaline</td>
+          <td><span class="tag">4. klass</span><br>Võimlemine</td>
+          <td><span class="tag">4. klass</span><br>Meeskonnaspordid</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="note-box">
+    <strong>Treeneritele-lapsevanematele:</strong> et muuta tunniplaani, ava fail <code>tunniplaan.html</code> GitHubis ja muuda tabeli teksti otse. Iga rida algab märgiga <code>&lt;tr&gt;</code> ja lõpeb märgiga <code>&lt;/tr&gt;</code> — muuda ainult tekstiosi, mitte märgendeid.
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="foot-grid">
+    <div>
+      <h4>Spordivaim</h4>
+      <p>Mitmealaklubi 1.–4. klassi õpilastele.</p>
+    </div>
+    <div>
+      <h4>Kontakt</h4>
+      <p><a href="mailto:info@spordivaim.ee">info@spordivaim.ee</a></p>
+    </div>
+    <div>
+      <h4>Lingid</h4>
+      <p><a href="tunniplaan.html">Tunniplaan</a></p>
+      <p><a href="kalender.html">Treenerite kalender</a></p>
+      <p><a href="aastaplaan.html">Aastaplaan</a></p>
+    </div>
+  </div>
+  <div class="fine-print">© 2026 Spordivaim</div>
+</footer>
+
+<script>
+  const navToggle = document.getElementById('navToggle');
+  const mainNav = document.getElementById('mainNav');
+  navToggle.addEventListener('click', () => mainNav.classList.toggle('open'));
+</script>
+</body>
+</html>

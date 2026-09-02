@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="et">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Spordivaim — mitmealaklubi 1.–4. klassile</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="brand" href="index.html">
+    <img src="assets/logo.png" alt="Spordivaim logo">
+  </a>
+  <button class="nav-toggle" id="navToggle" aria-label="Ava menüü">MENÜÜ</button>
+  <nav class="main-nav" id="mainNav">
+    <a class="active" href="index.html">Avaleht</a>
+    <a href="tunniplaan.html">Tunniplaan</a>
+    <a href="kalender.html">Treenerite kalender</a>
+    <a href="aastaplaan.html">Aastaplaan</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      <h1>Liikumine on <span>lapse mäng.</span></h1>
+      <p class="lede">Spordivaim on mitmealaklubi 1.–4. klassi õpilastele — igal nädalal erinevad spordialad, tublid treenerid ja rõõmus liikumine.</p>
+      <a class="btn" href="tunniplaan.html">Vaata tunniplaani</a>
+    </div>
+    <div class="hero-card">
+      <h3>Klubi lühidalt</h3>
+      <ul>
+        <li>1.–4. klassi õpilastele</li>
+        <li>Mitu spordiala õppeaasta jooksul</li>
+        <li>Trennid pärast koolipäeva</li>
+        <li>Kogenud ja lahked treenerid</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Vanuserühmad</h2>
+    <p>Iga rühm treenib oma tempos ja tasemel — lapsel on hea nii esimeses kui neljandas klassis alustada.</p>
+  </div>
+  <div class="groups-grid">
+    <div class="group-cell">
+      <span class="num">1.</span>
+      <h3>1. klass</h3>
+      <p>Esimesed sammud spordi juures — mäng, tasakaal ja rõõm liikumisest.</p>
+    </div>
+    <div class="group-cell">
+      <span class="num">2.</span>
+      <h3>2. klass</h3>
+      <p>Põhiliigutused kinnistuvad, lisandub rohkem meeskonnamänge.</p>
+    </div>
+    <div class="group-cell">
+      <span class="num">3.</span>
+      <h3>3. klass</h3>
+      <p>Rohkem tehnikat ja väikesed sisemised võistlused.</p>
+    </div>
+    <div class="group-cell">
+      <span class="num">4.</span>
+      <h3>4. klass</h3>
+      <p>Valmistume üleminekuks suuremale spordialale — tugevam koormus.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section fog">
+  <div class="section-head">
+    <h2>Kuidas alustada?</h2>
+    <p>Kolm sammu ja laps on juba trennis.</p>
+  </div>
+  <div class="groups-grid">
+    <div class="group-cell">
+      <span class="num">1</span>
+      <h3>Vaata tunniplaani</h3>
+      <p>Leia oma lapse klassile sobiv trenniaeg.</p>
+    </div>
+    <div class="group-cell">
+      <span class="num">2</span>
+      <h3>Võta ühendust</h3>
+      <p>Kirjuta meile e-kirja teel, et broneerida koht.</p>
+    </div>
+    <div class="group-cell">
+      <span class="num">3</span>
+      <h3>Tule trenni</h3>
+      <p>Esimene trenn on proovitrenn — tule mugavas riietuses!</p>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="foot-grid">
+    <div>
+      <h4>Spordivaim</h4>
+      <p>Mitmealaklubi 1.–4. klassi õpilastele.</p>
+    </div>
+    <div>
+      <h4>Kontakt</h4>
+      <p><a href="mailto:info@spordivaim.ee">info@spordivaim.ee</a></p>
+    </div>
+    <div>
+      <h4>Lingid</h4>
+      <p><a href="tunniplaan.html">Tunniplaan</a></p>
+      <p><a href="kalender.html">Treenerite kalender</a></p>
+      <p><a href="aastaplaan.html">Aastaplaan</a></p>
+    </div>
+  </div>
+  <div class="fine-print">© 2026 Spordivaim</div>
+</footer>
+
+<script>
+  const navToggle = document.getElementById('navToggle');
+  const mainNav = document.getElementById('mainNav');
+  navToggle.addEventListener('click', () => mainNav.classList.toggle('open'));
+</script>
+</body>
+</html>
