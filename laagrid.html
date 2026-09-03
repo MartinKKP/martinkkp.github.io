@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="et">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Laagrid — Spordivaim</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="brand" href="index.html">
+    <img src="assets/logo.png" alt="Spordivaim logo">
+  </a>
+  <button class="nav-toggle" id="navToggle" aria-label="Ava menüü">MENÜÜ</button>
+  <nav class="main-nav" id="mainNav">
+    <a href="index.html">Avaleht</a>
+    <a href="tunniplaan.html">Tunniplaan</a>
+    <a class="active" href="laagrid.html">Laagrid</a>
+    <a href="kalender.html">Treenerite kalender</a>
+    <a href="aastaplaan.html">Aastaplaan</a>
+  </nav>
+</header>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Laagrid</h2>
+    <p>Lisaks iganädalastele trennidele korraldame läbi aasta ka laagreid — hea võimalus rohkem liikuda ja uusi sõpru leida.</p>
+  </div>
+
+  <div class="groups-grid">
+    <div class="group-cell">
+      <span class="num">❄</span>
+      <h3>Talvelaager</h3>
+      <p>Talvevaheajal toimuv laager täis talvespordi tegevusi ja soojasid sisemänge.</p>
+    </div>
+    <div class="group-cell">
+      <span class="num">🌱</span>
+      <h3>Kevadlaager (väljasõidud)</h3>
+      <p>Kevadised väljasõidud looduses — matkad, orienteerumine ja õuesõppe tegevused.</p>
+    </div>
+    <div class="group-cell">
+      <span class="num">🍂</span>
+      <h3>Sügislaager</h3>
+      <p>Sügisvaheajal toimuv laager, mis avab uue hooaja mänguliste treeningutega.</p>
+    </div>
+  </div>
+
+  <div class="section-head" style="margin-top:3rem;">
+    <h2>Suvelaagrid</h2>
+    <p>Suvel toimub kolm eraldi laagrit, igaühele oma vanuserühmale kohandatud programmiga.</p>
+  </div>
+
+  <div class="groups-grid">
+    <div class="group-cell">
+      <span class="num">1–4</span>
+      <h3>Algklassidele</h3>
+      <p>Mänguline ja mitmekülgne suvelaager 1.–4. klassi õpilastele — sport, loovus ja seiklus.</p>
+    </div>
+    <div class="group-cell">
+      <span class="num">5–9</span>
+      <h3>Põhikooliõpilastele</h3>
+      <p>Aktiivsem programm suuremate lastega — rohkem spordialasid ja pikemad päevad.</p>
+    </div>
+    <div class="group-cell">
+      <span class="num">10–12</span>
+      <h3>Gümnaasiumiõpilastele</h3>
+      <p>Iseseisvam ja väljakutsuvam laager, sh treeningplaneerimise ja liidrioskuste teemad.</p>
+    </div>
+  </div>
+
+  <div class="note-box">
+    Peagi lisandub siia laagrite pilte ja tutvustusvideoid — jälgi lehte!
+  </div>
+
+  <div class="note-box">
+    <strong>Treeneritele-lapsevanematele:</strong> et muuta laagrite infot (kuupäevad, hinnad, kirjeldused), ava fail <code>laagrid.html</code> GitHubis ja muuda tekstiosi otse, samamoodi nagu teistel lehtedel.
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="foot-grid">
+    <div>
+      <h4>Spordivaim</h4>
+      <p>Mitmealaklubi 1.–4. klassi õpilastele.</p>
+    </div>
+    <div>
+      <h4>Kontakt</h4>
+      <p><a href="mailto:info@spordivaim.ee">info@spordivaim.ee</a></p>
+    </div>
+    <div>
+      <h4>Lingid</h4>
+      <p><a href="tunniplaan.html">Tunniplaan</a></p>
+      <p><a href="laagrid.html">Laagrid</a></p>
+      <p><a href="kalender.html">Treenerite kalender</a></p>
+      <p><a href="aastaplaan.html">Aastaplaan</a></p>
+    </div>
+  </div>
+  <div class="fine-print">© 2026 Spordivaim</div>
+</footer>
+
+<script>
+  const navToggle = document.getElementById('navToggle');
+  const mainNav = document.getElementById('mainNav');
+  navToggle.addEventListener('click', () => mainNav.classList.toggle('open'));
+</script>
+</body>
+</html>
